@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Medicine Details - UDILIV 300MG</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<header>
+<div class="container header-container">
+<h2>Medingen</h2>
+<nav>
+<a href="#">Home</a>
+<a href="#">Offers</a>
+<a href="#">Notifications</a>
+<a href="#">Profile</a>
+</nav>
+</div>
+</header>
+<div class="container main-container">
+<section class="section">
+<h3>About UDILIV 300MG TABLET 15'S</h3>
+<p>UDILIV 300MG TABLET 15'S (UDCA) is a naturally occurring bile acid used to treat liver disorders and manage gallstones by improving bile flow and offering anti-inflammatory effects.</p>
+</section>
+<section class="section">
+<h3>Uses</h3>
+<ul>
+<li>Aids in dissolving gallstones.</li>
+<li>Used in primary biliary cholangitis (PBC).</li>
+<li>Improves liver function and reduces gallstone formation.</li>
+</ul>
+</section>
+<section class="section">
+<h3>How It Works</h3>
+<p>UDILIV improves bile flow and reduces cholesterol absorption. Dosage varies depending on body weight and specific conditions.</p>
+</section>
+<section class="section">
+<h3>Side Effects</h3>
+<ul>
+<li>Nausea</li>
+<li>Abdominal discomfort</li>
+<li>Diarrhea</li>
+<li>Hair loss (rare)</li>
+</ul>
+</section>
+<section class="section compare-section">
+<h3>Compare Medicines</h3>
+<div class="compare-table">
+{% for i in range(4) %}
+<div class="card">
+<img src="dolo 650.jpg" alt="Dolo 650 mg">
+<h4>Dolo 650 mg</h4>
+<p><strong>Generic:</strong> Paracetamol 650 mg</p>
+<p><strong>Price:</strong> Rs. 34 <span class="offer">(15% Off)</span></p>
+<div class="rating">★★★★☆ (4.0)</div>
+<p class="desc">"Good medicine, slightly costly compared to generic."</p>
+</div>
+{% endfor %}
+</div>
+</section>
+<section class="section faq-section">
+<h3>Frequently Asked Questions</h3>
+<ul>
+<li>What if I vomit after taking Paracetamol?</li>
+<li>When will I feel better after taking it?</li>
+<li>Can I take it with ibuprofen?</li>
+<li>Does it make babies sleepy?</li>
+<li>Is it safe for children?</li>
+</ul>
+</section>
+<section class="section disclaimer">
+<h3>Disclaimer</h3>
+<p>This content is for informational purposes only and is not a substitute for professional medical advice. Always consult a doctor.</p>
+</section>
+<section class="section highlights">
+<div>
+<img src="safe and secure.jpg" alt="Payment">
+<p>Safe & Secured Payment</p>
+</div>
+<div>
+<img src="authentic product.jpg" alt="Authentic">
+<p>100% Authentic Products</p>
+</div>
+<div>
+<img src="happy customers.jpg" alt="Happy">
+<p>6 lac+ Happy Customers</p>
+</div>
+</section>
+</div>
+<footer>
+<div class="container footer-container">
+<div class="footer-column">
+<h4>Website</h4>
+<a href="#">Home</a>
+<a href="#">Features</a>
+<a href="#">How it works</a>
+</div>
+<div class="footer-column">
+<h4>Follow Us</h4>
+<a href="#">Instagram</a>
+<a href="#">Facebook</a>
+<a href="#">Twitter</a>
+</div>
+<div class="footer-column">
+<h4>More</h4>
+<a href="#">Help Center</a>
+<a href="#">Become Member</a>
+<a href="#">Events</a>
+</div>
+<div class="footer-column">
+<h4>Company</h4>
+<p>Medingen</p>
+<p>Helping you make better healthcare decisions.</p>
+</div>
+</div>
+<p class="footer-bottom">©2024 Medingen. All Rights Reserved</p>
+</footer>
+</body>
+</html>
